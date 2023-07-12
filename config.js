@@ -58,12 +58,11 @@ module.exports = {
     HANDLERS: process.env.HANDLERS || '.,',
     STICKER_DATA: process.env.STICKER_DATA || "Repthon",
     BOT_NAME: process.env.BOT_NAME || 'Repthon',
-    AUDIO_DATA: process.env.AUDIO_DATA === undefined || process.env.AUDIO_DATA === "private" ? 'ꪶ͢٭𝒓𝒆𝒑𝒕𝒉𝒐𝒏¹¹ꫂ;بــوت ريبـــثون;https://imgur.com/a/6SpaXJE' : process.env.AUDIO_DATA,
+    AUDIO_DATA: process.env.AUDIO_DATA === undefined || process.env.AUDIO_DATA === "private" ? 'ꪶ͢٭𝒓𝒆𝒑𝒕𝒉𝒐𝒏¹¹ꫂ;بــوت ريبـــثون;https://telegra.ph/file/f2fa5ee991b8d42030ece.jpg' : process.env.AUDIO_DATA,
     TAKE_KEY: process.env.TAKE_KEY || '',
     MODE: process.env.MODE || 'private',
     WARN: process.env.WARN || '4',
-    ANTILINK_WARN: process.env.ANTILINK_WARN || '',
-    COMMAND:
+    ANTILINK_WARN: process.env.ANTILINK_WARN || ''
     HEROKU: {
         HEROKU: process.env.HEROKU === undefined ? false : convertToBool(process.env.HEROKU),
         API_KEY: process.env.HEROKU_API_KEY || '',
