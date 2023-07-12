@@ -25,7 +25,12 @@ DEBUG = process.env.DEBUG === undefined ? false : convertToBool(process.env.DEBU
 if (!(process.env.SESSION || process.env.SESSION_ID)) throw new Error("No session found, add session before starting bot")
 module.exports = {
     VERSION: 'v4.0.0',
-    ALIVE: process.env.ALIVE || "",
+    ALIVE: process.env.ALIVE || "*{star} قاعدۿ البيانات :* تعمل بنـجاح
+*{star} إصـدار التـيليثون :* `{telever}`
+*{star} إصـدار ريبـــثون :* `{repver}`
+*{star} إصـدار البـايثون :* `{JavaScript_version}`
+*{star} الوقـت :* `{uptime}`
+*{star} المسـتخدم:* {sendr}"
     BLOCK_CHAT: process.env.BLOCK_CHAT || '',
     PM_ANTISPAM: convertToBool(process.env.PM_ANTISPAM) || '',
     ALWAYS_ONLINE: convertToBool(process.env.ALWAYS_ONLINE) || false,
