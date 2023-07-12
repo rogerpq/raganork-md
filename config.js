@@ -25,8 +25,7 @@ DEBUG = process.env.DEBUG === undefined ? false : convertToBool(process.env.DEBU
 if (!(process.env.SESSION || process.env.SESSION_ID)) throw new Error("No session found, add session before starting bot")
 module.exports = {
     VERSION: 'v4.0.0',
-    ALIVE: process.env.ALIVE || "𓆩بــوت ريبـــثون يــعـمـل بنجــاح .. 𝐑𝐞𝐩𝐭𝐡𝐨𝐧𓆪
-*{stars} قاعدۿ البيانات :* تعمل بنـجاح
+    ALIVE: process.env.ALIVE || "*{stars} قاعدۿ البيانات :* تعمل بنـجاح
 *{stars} إصـدار التـيليثون :* `{telever}`
 *{stars} إصـدار ريبـــثون :* `{repver}`
 *{stars} إصـدار البـايثون :* `{JavaScript_version}`
