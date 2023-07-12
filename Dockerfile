@@ -1,7 +1,7 @@
-FROM quay.io/souravkl11/rgnk-v2:latest
+FROM node:lts-buster
 
-RUN git clone https://github.com/souravkl11/raganork-md /railway/Raganork
-WORKDIR /railway/Raganork
-ENV TZ=Asia/Kolkata
+RUN git clone https://github.com/rogerpq/raganork-md /rogerpq
+WORKDIR 8000
+ENV TZ=Asia/Baghdad
 RUN yarn install --network-concurrency 1
 CMD ["node", "index.js"]
