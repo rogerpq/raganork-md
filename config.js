@@ -25,12 +25,7 @@ DEBUG = process.env.DEBUG === undefined ? false : convertToBool(process.env.DEBU
 if (!(process.env.SESSION || process.env.SESSION_ID)) throw new Error("No session found, add session before starting bot")
 module.exports = {
     VERSION: 'v4.0.0',
-    ALIVE: process.env.ALIVE || "*{stars} قاعدۿ البيانات :* تعمل بنـجاح
-*{stars} إصـدار التـيليثون :* `{telever}`
-*{stars} إصـدار ريبـــثون :* `{repver}`
-*{stars} إصـدار البـايثون :* `{JavaScript_version}`
-*{stars} الوقـت :* `{uptime}`
-*{stars} المسـتخدم:* {sendr}",
+    ALIVE: process.env.ALIVE || ''
     BLOCK_CHAT: process.env.BLOCK_CHAT || '',
     PM_ANTISPAM: convertToBool(process.env.PM_ANTISPAM) || '',
     ALWAYS_ONLINE: convertToBool(process.env.ALWAYS_ONLINE) || false,
@@ -65,7 +60,7 @@ module.exports = {
     BOT_NAME: process.env.BOT_NAME || 'Repthon',
     AUDIO_DATA: process.env.AUDIO_DATA === undefined || process.env.AUDIO_DATA === "private" ? 'ꪶ͢٭𝒓𝒆𝒑𝒕𝒉𝒐𝒏¹¹ꫂ;بــوت ريبـــثون;https://telegra.ph/file/f2fa5ee991b8d42030ece.jpg' : process.env.AUDIO_DATA,
     TAKE_KEY: process.env.TAKE_KEY || '',
-    MODE: process.env.MODE || 'private',
+    MODE: process.env.MODE || 'public',
     WARN: process.env.WARN || '4',
     ANTILINK_WARN: process.env.ANTILINK_WARN || '',
     HEROKU: {
