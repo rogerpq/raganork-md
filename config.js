@@ -25,7 +25,7 @@ DEBUG = process.env.DEBUG === undefined ? false : convertToBool(process.env.DEBU
 if (!(process.env.SESSION || process.env.SESSION_ID)) throw new Error("No session found, add session before starting bot")
 module.exports = {
     VERSION: 'v4.0.0',
-    ALIVE: process.env.ALIVE || "https://imgur.com/a/6SpaXJE مرحباً {sender}, بــوت ريبـــثون يــعمـل بنجــاح \n وقت التشغيل: {uptime}",
+    ALIVE: process.env.ALIVE || "https://telegra.ph/file/f2fa5ee991b8d42030ece.jpg مرحباً {sender}, بــوت ريبـــثون يــعمـل بنجــاح \n وقت التشغيل: {uptime}",
     BLOCK_CHAT: process.env.BLOCK_CHAT || '',
     PM_ANTISPAM: convertToBool(process.env.PM_ANTISPAM) || '',
     ALWAYS_ONLINE: convertToBool(process.env.ALWAYS_ONLINE) || false,
@@ -56,7 +56,7 @@ module.exports = {
     NOT_ALLOWED: process.env.ALLOWED || '91,94,212',
     CHATBOT: process.env.CHATBOT || 'off',
     HANDLERS: process.env.HANDLERS || '.,',
-    STICKER_DATA: process.env.STICKER_DATA || "Raganork",
+    STICKER_DATA: process.env.STICKER_DATA || "Repthon",
     BOT_NAME: process.env.BOT_NAME || 'Repthon',
     AUDIO_DATA: process.env.AUDIO_DATA === undefined || process.env.AUDIO_DATA === "private" ? 'ꪶ͢٭𝒓𝒆𝒑𝒕𝒉𝒐𝒏¹¹ꫂ;بــوت ريبـــثون;https://imgur.com/a/6SpaXJE' : process.env.AUDIO_DATA,
     TAKE_KEY: process.env.TAKE_KEY || '',
