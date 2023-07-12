@@ -65,8 +65,8 @@ Module({
   var menu = `╭═══〘 ${BOT_INFO.split(";")[0]} 〙═══⊷❍
 ┃${star}╭──────────────
 ┃${star}│
-┃${star}│ _*Owner*_ : ${BOT_INFO.split(";")[1]}
-┃${star}│ _*User*_ : ${message.senderName.replace( /[\r\n]+/gm, "" )}
+┃${star}│ _*المالك*_ : ${BOT_INFO.split(";")[1]}
+┃${star}│ _*المستخدم*_ : ${message.senderName.replace( /[\r\n]+/gm, "" )}
 ┃${star}│ _*Mode*_ : ${MODE}
 ┃${star}│ _*Server*_ : ${__dirname.startsWith('/skl')?"Heroku":"Private (VPS)"}
 ┃${star}│ _*Available RAM*_ : ${used} of ${total}
@@ -84,7 +84,7 @@ ${cmdmenu}`
 try {
   var _img = await skbuffer(BOT_INFO.split(";")[3]||`https://picsum.photos/800/500`)
 } catch (error) {
-  var _img = await skbuffer(`https://i.imgur.com/B2YWSLk.jpg`)
+  var _img = await skbuffer(`https://imgur.com/a/6SpaXJE`)
 }
 return await message.client.sendMessage(message.jid,{
   image: await skbuffer(BOT_INFO.split(";")[3]||`https://picsum.photos/800/500`),
@@ -92,14 +92,14 @@ return await message.client.sendMessage(message.jid,{
 })
 }))
 Module({
-  pattern: 'alive',
+  pattern: 'فحص',
   fromMe: w,
   desc: 'Is bot alive?'
 }, (async (message, match) => {
   await parseAlive(message, ALIVE)
 }))
 Module({
-  pattern: 'alive ?(.*)',
+  pattern: 'فحص ?(.*)',
   fromMe: true,
   dontAddCommandList: true
 }, (async (message, match) => {
