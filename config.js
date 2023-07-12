@@ -25,12 +25,13 @@ DEBUG = process.env.DEBUG === undefined ? false : convertToBool(process.env.DEBU
 if (!(process.env.SESSION || process.env.SESSION_ID)) throw new Error("No session found, add session before starting bot")
 module.exports = {
     VERSION: 'v4.0.0',
-    ALIVE: process.env.ALIVE || "*{star} قاعدۿ البيانات :* تعمل بنـجاح
-*{star} إصـدار التـيليثون :* `{telever}`
-*{star} إصـدار ريبـــثون :* `{repver}`
-*{star} إصـدار البـايثون :* `{JavaScript_version}`
-*{star} الوقـت :* `{uptime}`
-*{star} المسـتخدم:* {sendr}"
+    ALIVE: process.env.ALIVE || "𓆩بــوت ريبـــثون يــعـمـل بنجــاح .. 𝐑𝐞𝐩𝐭𝐡𝐨𝐧𓆪
+*{stars} قاعدۿ البيانات :* تعمل بنـجاح
+*{stars} إصـدار التـيليثون :* `{telever}`
+*{stars} إصـدار ريبـــثون :* `{repver}`
+*{stars} إصـدار البـايثون :* `{JavaScript_version}`
+*{stars} الوقـت :* `{uptime}`
+*{stars} المسـتخدم:* {sendr}",
     BLOCK_CHAT: process.env.BLOCK_CHAT || '',
     PM_ANTISPAM: convertToBool(process.env.PM_ANTISPAM) || '',
     ALWAYS_ONLINE: convertToBool(process.env.ALWAYS_ONLINE) || false,
@@ -67,8 +68,7 @@ module.exports = {
     TAKE_KEY: process.env.TAKE_KEY || '',
     MODE: process.env.MODE || 'private',
     WARN: process.env.WARN || '4',
-    ANTILINK_WARN: process.env.ANTILINK_WARN || ''
-    READ_COMMAND:
+    ANTILINK_WARN: process.env.ANTILINK_WARN || '',
     HEROKU: {
         HEROKU: process.env.HEROKU === undefined ? false : convertToBool(process.env.HEROKU),
         API_KEY: process.env.HEROKU_API_KEY || '',
