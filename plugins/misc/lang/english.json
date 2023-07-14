@@ -1,8 +1,8 @@
 {
     "STRINGS": {
         "converters": {
-        "STICKER_DESC":"Creates stickers. Reply to media.",
-        "STICKER_NEED_REPLY":"_Reply to a photo or a short video!_",
+        "STICKER_DESC":"_لإنشاء ملصق يجب الرد على الميديا_",
+        "STICKER_NEED_REPLY":"_لإنشاء ملصق صغير قم بالرد على الصورة او فيديو_",
         "MP3_DESC":"Converts replied media to mp3 format",
         "MP3_NEED_REPLY:":"_Reply to an audio or video!_",
         "BASS_DESC:":"Bass boosts audio. .bass 20",
