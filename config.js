@@ -24,8 +24,8 @@ DATABASE_URL = process.env.DATABASE_URL === undefined ? './bot.db' : process.env
 DEBUG = process.env.DEBUG === undefined ? false : convertToBool(process.env.DEBUG);
 if (!(process.env.SESSION || process.env.SESSION_ID)) throw new Error("No session found, add session before starting bot")
 module.exports = {
-    CMD_INFO: '
-╭════〘 *_ᴅᴏᴡɴʟᴏᴀᴅ_* 〙════⊷❍
+    CMD_INFO:
+'╭════〘 *_ᴅᴏᴡɴʟᴏᴀᴅ_* 〙════⊷❍
 ┃✰│ _1. ɪɴsᴛᴀ_
 ┃✰│ _2. ғʙ_
 ┃✰│ _3. sᴛᴏʀʏ_
